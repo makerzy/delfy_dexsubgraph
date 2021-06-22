@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "scripts": {
     "build-contract": "solc contracts/Gravity.sol --abi -o abis --overwrite && solc contracts/Gravity.sol --bin -o bin --overwrite",
-    "create": "graph create makerzy/ --node https://api.thegraph.com/deploy/",
-    "create-local": "graph create makerzy/ --node http://127.0.0.1:8020",
+    "create": "graph create makerzy/dexsubgraph --node https://api.thegraph.com/deploy/",
+    "create-local": "graph create makerzy/dexsubgraph --node http://127.0.0.1:8020",
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy makerzy/ --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy-local": "graph deploy makerzy/ --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "deploy": "graph deploy makerzy/dexsubgraph --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy-local": "graph deploy makerzy/dexsubgraph --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.20.1",
